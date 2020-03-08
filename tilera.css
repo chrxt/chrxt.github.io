@@ -1,0 +1,70 @@
+/*/ FUNDO E FONTE /*/
+
+body {
+    background-color: #1b1b1b;
+}
+
+*{
+    font-family: Roboto Mono;
+    color: #e0e0e0;
+    font-size: 13px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/*/ SELEÇÃO DE TEXTO /*/
+
+::-moz-selection { background: #228c225c; }
+::selection { background: #228c225c; }
+
+/*/ LINK /*/
+
+a {
+    text-decoration: none;
+}
+
+/*/ PESQUISA /*/
+
+#input {
+	background: rgba(0, 66, 65, 0);
+    padding: 1px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #228c22c9;
+    width: 15%;
+    height: 20px;
+	top: 25%;
+    left: 0;
+	right: 0;
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+/*/ BOX /*/
+
+#help {
+    font-size: 15px;
+    color: #228c22c9;
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+    left: 0;
+	right: 0;
+    text-align: left;
+    width: 18%;
+    top: 25%;
+}
+
+#nuclear {
+    font-size: 150px;
+    color: #ffffff17;
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+    left: 0;
+	right: 0;
+    text-align: center;
+    width: 50%;
+    top: 0%;
+}
