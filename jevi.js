@@ -72,17 +72,17 @@ function parseCom(com) {
 	else if (com.startsWith("t")==true) {
 		// if matches the "t" command
 		if (/^t$/i.test(com)) {
-			nav("https://www.twitter.com/");
+			nav("https://twitter.com/");
 		}
 		// if the t [@]user_name command
 		else if (/^t- @?[A-Za-z0-9_]{1,15}$/i.test(com)) {
 			var targs = com.split(" ");
-			nav("https://www.twitter.com/" + targs.pop());
+			nav("https://twitter.com/" + targs.pop());
 		}
 		// search twitter for text
 		else if (/^t .{1,140}$/i.test(com)) {
 			var query = com.replace(/^t /i, "");
-			nav("https://www.twitter.com/search?q=" + encodeURIComponent(query));
+			nav("https://twitter.com/search?q=" + encodeURIComponent(query));
 		}
 
  // if anything else, it'll just google it because who cares
