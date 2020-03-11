@@ -32,7 +32,7 @@ a {
     padding: 1px;
     text-align: center;
     border: none;
-    border-bottom: 2px solid #228c2296;
+    border-bottom: 1px solid #228c2296;
     width: 20%;
     height: 30px;
 }
@@ -66,7 +66,7 @@ a {
 
 #nuclear {
     font-size: 180px;
-    color: #ffffff17;
+    color: #ffffff38;
     position: absolute;
     margin-left: auto;
 	margin-right: auto;
