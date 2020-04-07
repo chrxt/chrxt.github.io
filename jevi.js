@@ -46,6 +46,50 @@ function parseCom(com) {
 		window.commandsshown = false;
 	}
 
+    // TRANSLATE
+	else if (com.startsWith("trns")==true) {
+		// if the youtube command is matched
+        if (/^trns .{1,140}$/i.test(com)) {
+			var query = com.replace(/^trns /i, "");
+			nav("https://translate.google.com/#view=home&op=translate&sl=en&tl=pt&text=" + encodeURIComponent(query));
+		}
+
+		// if the plain old reddit command is matched
+		else if (/^trns$/i.test(com)) {
+			nav("https://translate.google.com/");
+		}
+		// if anything else, it'll just google it because who cares
+		else if (urlPattern.test(com)){
+			nav(com);
+		}
+		// if all else fails, google it
+		else {
+			search();
+		}
+	}
+    
+    // GENIUS
+	else if (com.startsWith("genius")==true) {
+		// if the youtube command is matched
+        if (/^genius .{1,140}$/i.test(com)) {
+			var query = com.replace(/^genius /i, "");
+			nav("https://genius.com/search?q=" + encodeURIComponent(query));
+		}
+
+		// if the plain old reddit command is matched
+		else if (/^genius$/i.test(com)) {
+			nav("https://genius.com/");
+		}
+		// if anything else, it'll just google it because who cares
+		else if (urlPattern.test(com)){
+			nav(com);
+		}
+		// if all else fails, google it
+		else {
+			search();
+		}
+	}
+    
     // REDDIT
 	else if (com.startsWith("r")==true) {
 		// if the subreddit command is matched
@@ -75,7 +119,7 @@ function parseCom(com) {
 			nav("https://twitter.com/");
 		}
 		// if the t [@]user_name command
-		else if (/^t- @?[A-Za-z0-9_]{1,15}$/i.test(com)) {
+		else if (/^t @?[A-Za-z0-9_]{1,15}$/i.test(com)) {
 			var targs = com.split(" ");
 			nav("https://twitter.com/" + targs.pop());
 		}
@@ -163,29 +207,45 @@ function parseCom(com) {
 	}
 
 
-
 // misc commands
 
     //GMAIL
 	else if (/^mail$/i.test(com)) {
-		nav("http://inbox.google.com");
+		nav("https://mail.google.com/");
 	}
+    
+    else if (/^mail1$/i.test(com)) {
+		nav("https://mail.google.com/mail/u/1/");
+	}
+    
     //DRIVE
 	else if (/^drive$/i.test(com) || /^d$/i.test(com)) {
 		nav("http://drive.google.com");
 	}
+    
+    else if (/^drive1$/i.test(com) || /^d1$/i.test(com)) {
+		nav("http://drive.google.com/u/1/");
+	}
+    
     //DOCS
      else if (/^docs?$/i.test(com) || /^doc$/i.test(com)) {
 		nav("https://docs.google.com/");
 	}
+    
+    else if (/^docs1?$/i.test(com) || /^doc1$/i.test(com)) {
+		nav("https://docs.google.com/u/1/");
+	}
+    
     //MAPS
     else if (/^maps?$/i.test(com) || /^map$/i.test(com)) {
 		nav("https://maps.google.com/");
 	}
+    
     //SPEEDTEST
 	else if (/^speedtest$/i.test(com) || /^spd$/i.test(com)) {
 		nav("http://www.speedtest.net");
 	}
+    
     //É PÃES OU PÕES
 	else if (/^paes$/i.test(com) || /^poes$/i.test(com)) {
 		nav("https://youtu.be/_Qwm3nvN85Q");
@@ -258,6 +318,7 @@ function parseCom(com) {
     else if (/^uns?$/i.test(com) || /^u$/i.test(com)) {
 		nav("https://unsplash.com/");
 	}
+    
 
 // if it doesn't match any of the commands...
 	// ... but is a valid URL

@@ -7,11 +7,11 @@ body, html {
 }
 
 *{
-    font-family: Roboto Mono;
+    font-family: Ubuntu Mono;
     color: #e0e0e0A7;
-    font-size: 13px;
+    font-size: 18px;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 /*/ SELEÇÃO DE TEXTO /*/
@@ -32,8 +32,7 @@ a {
     padding: 1px;
     text-align: center;
     border: none;
-    border-bottom: 1px solid #228c2296;
-    width: 20%;
+    width: 80%;
     height: 30px;
 }
 
@@ -41,7 +40,8 @@ a {
 #line {
     height: 80%;
     width: 80%;
-    border: 8px solid #228c2296;
+    border-bottom: 5px solid #2f7f2f;
+    border-top: 5px solid #2f7f2f;
     position: absolute;
     margin-left: auto;
 	margin-right: auto;
@@ -61,12 +61,12 @@ a {
 	right: 0;
     text-align: center;
     width: 100%;
-    top: 35%;
+    top: 45%;
 }
 
 #nuclear {
     font-size: 180px;
-    color: #ffffff38;
+    color: #436b4338;
     position: absolute;
     margin-left: auto;
 	margin-right: auto;
