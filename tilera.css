@@ -16,8 +16,8 @@ body, html {
 
 /*/ SELEÇÃO DE TEXTO /*/
 
-::-moz-selection { background: #228c225c; }
-::selection { background: #228c225c; }
+::-moz-selection { background: #2f7f2f5c; }
+::selection { background: #2f7f2f5c; }
 
 /*/ LINK /*/
 
@@ -33,7 +33,7 @@ a {
     text-align: center;
     border: none;
     width: 80%;
-    height: 30px;
+    height: 100%;
 }
 
 /*/ BOX /*/
@@ -61,7 +61,8 @@ a {
 	right: 0;
     text-align: center;
     width: 100%;
-    top: 45%;
+    height: 45%;
+    top: 25%;
 }
 
 #nuclear {
