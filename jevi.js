@@ -90,6 +90,28 @@ function parseCom(com) {
 		}
 	}
     
+	// SCI-HUB
+	else if (com.startsWith("sci")==true) {
+		// if the youtube command is matched
+        if (/^sci .{1,140}$/i.test(com)) {
+			var query = com.replace(/^sci /i, "");
+			nav("https://sci-hub.tw/" + encodeURIComponent(query));
+		}
+
+		// if the plain old reddit command is matched
+		else if (/^sci$/i.test(com)) {
+			nav("https://sci-hub.tw/");
+		}
+		// if anything else, it'll just google it because who cares
+		else if (urlPattern.test(com)){
+			nav(com);
+		}
+		// if all else fails, google it
+		else {
+			search();
+		}
+	}
+
     // REDDIT
 	else if (com.startsWith("r")==true) {
 		// if the subreddit command is matched
