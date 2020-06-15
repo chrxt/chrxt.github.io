@@ -41,9 +41,9 @@ function searchKeyPress(e) {
 // parse the user's command
 function parseCom(com) {
 	// handle help command
-	if (/^commands$/i.test(com)) {
+	if (/^$/i.test(com)) {
 		//document.location.href = "commands.txt";
-		window.commandsshown = false;
+		nav("https://www.google.com/");
 	}
 
     // TRANSLATE
