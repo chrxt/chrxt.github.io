@@ -1,4 +1,4 @@
-/*/ --- PESQUISA --- /*/
+// --- PESQUISA --- //
 
 var box = document.getElementById("input");
 
@@ -48,14 +48,14 @@ function parseCom(com) {
 
     // TRANSLATE
 	else if (com.startsWith("trns")==true) {
-		// if the youtube command is matched
-        if (/^trns .{1,140}$/i.test(com)) {
-			var query = com.replace(/^trns /i, "");
+		// if the translate command is matched
+        if (/^tr .{1,140}$/i.test(com)) {
+			var query = com.replace(/^tr /i, "");
 			nav("https://translate.google.com/#view=home&op=translate&sl=en&tl=pt&text=" + encodeURIComponent(query));
 		}
 
-		// if the plain old reddit command is matched
-		else if (/^trns$/i.test(com)) {
+		// if the plain old translate command is matched
+		else if (/^tr$/i.test(com)) {
 			nav("https://translate.google.com/");
 		}
 		// if anything else, it'll just google it because who cares
@@ -69,15 +69,15 @@ function parseCom(com) {
 	}
     
     // GENIUS
-	else if (com.startsWith("genius")==true) {
-		// if the youtube command is matched
-        if (/^genius .{1,140}$/i.test(com)) {
-			var query = com.replace(/^genius /i, "");
+	else if (com.startsWith("ge")==true) {
+		// if the genius command is matched
+        if (/^ge .{1,140}$/i.test(com)) {
+			var query = com.replace(/^ge /i, "");
 			nav("https://genius.com/search?q=" + encodeURIComponent(query));
 		}
 
-		// if the plain old reddit command is matched
-		else if (/^genius$/i.test(com)) {
+		// if the plain old genius command is matched
+		else if (/^ge$/i.test(com)) {
 			nav("https://genius.com/");
 		}
 		// if anything else, it'll just google it because who cares
@@ -90,28 +90,6 @@ function parseCom(com) {
 		}
 	}
     
-	// SCI-HUB
-	else if (com.startsWith("sci")==true) {
-		// if the youtube command is matched
-        if (/^sci .{1,140}$/i.test(com)) {
-			var query = com.replace(/^sci /i, "");
-			nav("https://sci-hub.tw/" + encodeURIComponent(query));
-		}
-
-		// if the plain old reddit command is matched
-		else if (/^sci$/i.test(com)) {
-			nav("https://sci-hub.tw/");
-		}
-		// if anything else, it'll just google it because who cares
-		else if (urlPattern.test(com)){
-			nav(com);
-		}
-		// if all else fails, google it
-		else {
-			search();
-		}
-	}
-
     // REDDIT
 	else if (com.startsWith("r")==true) {
 		// if the subreddit command is matched
@@ -239,7 +217,6 @@ function parseCom(com) {
     else if (/^mail1$/i.test(com)) {
 		nav("https://mail.google.com/mail/u/1/");
 	}
-    
     //DRIVE
 	else if (/^drive$/i.test(com) || /^d$/i.test(com)) {
 		nav("http://drive.google.com");
@@ -248,7 +225,6 @@ function parseCom(com) {
     else if (/^drive1$/i.test(com) || /^d1$/i.test(com)) {
 		nav("http://drive.google.com/u/1/");
 	}
-    
     //DOCS
      else if (/^docs?$/i.test(com) || /^doc$/i.test(com)) {
 		nav("https://docs.google.com/");
@@ -257,15 +233,9 @@ function parseCom(com) {
     else if (/^docs1?$/i.test(com) || /^doc1$/i.test(com)) {
 		nav("https://docs.google.com/u/1/");
 	}
-    
     //MAPS
     else if (/^maps?$/i.test(com) || /^map$/i.test(com)) {
 		nav("https://maps.google.com/");
-	}
-    
-    //SPEEDTEST
-	else if (/^speedtest$/i.test(com) || /^spd$/i.test(com)) {
-		nav("http://www.speedtest.net");
 	}
     
     //É PÃES OU PÕES
@@ -328,10 +298,6 @@ function parseCom(com) {
     else if (/^last?$/i.test(com) || /^l$/i.test(com)) {
 		nav("https://www.last.fm/user/Parceira");
 	}
-    //GLOBOESPORTE
-    else if (/^ge?$/i.test(com) || /^globoesporte$/i.test(com)) {
-		nav("https://globoesporte.globo.com");
-	}
     //HOTMAIL
     else if (/^hotmail?$/i.test(com) || /^out$/i.test(com)) {
 		nav("https://outlook.live.com/");
@@ -340,8 +306,15 @@ function parseCom(com) {
     else if (/^uns?$/i.test(com) || /^u$/i.test(com)) {
 		nav("https://unsplash.com/");
 	}
+    //SCIHUB
+    else if (/^sci?$/i.test(com)) {
+		nav("https://sci-hub.tw/");
+	}
+    //LIBGEN
+    else if (/^lib?$/i.test(com)) {
+		nav("https://libgen.is/");
+	}
     
-
 // if it doesn't match any of the commands...
 	// ... but is a valid URL
 	else if (urlPattern.test(com)) {
