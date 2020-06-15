@@ -8,7 +8,7 @@ body, html {
 
 *{
     font-family: Ubuntu Mono;
-    color: #e0e0e0A7;
+    color: #F49DA6A5;
     font-size: 18px;
     text-align: center;
     text-transform: none;
@@ -16,8 +16,8 @@ body, html {
 
 /*/ SELEÇÃO DE TEXTO /*/
 
-::-moz-selection { background: #2f7f2f5c; }
-::selection { background: #2f7f2f5c; }
+::-moz-selection { background: #E4848A5c; }
+::selection { background: #E4848A5c; }
 
 /*/ LINK /*/
 
@@ -30,50 +30,34 @@ a {
 #input {
 	background: rgba(0, 66, 65, 0);
     padding: 1px;
-    text-align: center;
     border: none;
     width: 80%;
     height: 100%;
 }
 
 /*/ BOX /*/
-#line {
-    height: 80%;
-    width: 80%;
-    border-bottom: 5px solid #2f7f2f;
-    border-top: 5px solid #2f7f2f;
+#lineT {
+    width: 100%;
+    border-top: 3px solid #E4848AD1;
     position: absolute;
-    margin-left: auto;
-	margin-right: auto;
-    left: 0;
-	right: 0;
-    top: 9%;
+    top: 0%;
 }
 
+#lineB {
+    width: 100%;
+    border-bottom: 3px solid #E4848AD1;
+    position: absolute;
+    bottom: 0%;
+}
 
 #box {
-    font-size: 15px;
-    color: #228c2296;
     position: absolute;
+    border: 2px solid #E4848A6B;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    right: 0;
     left: 0;
-	right: 0;
-    text-align: center;
-    width: 100%;
-    height: 45%;
-    top: 25%;
-}
-
-#nuclear {
-    font-size: 180px;
-    color: #436b4338;
-    position: absolute;
-    margin-left: auto;
-	margin-right: auto;
-    left: 0;
-	right: 0;
-    text-align: center;
-    width: 100%;
-    top: 10%;
+    width: 75%;
+    height: 8%;
+    top: 42%;
 }
