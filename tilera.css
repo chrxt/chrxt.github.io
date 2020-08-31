@@ -8,7 +8,7 @@ body, html {
 
 *{
     font-family: Ubuntu Mono;
-    color: #F49DA6A5;
+    color: #048257A5 ;
     font-size: 18px;
     text-align: center;
     text-transform: none;
@@ -16,14 +16,8 @@ body, html {
 
 /*/ SELEÇÃO DE TEXTO /*/
 
-::-moz-selection { background: #E4848A5c; }
-::selection { background: #E4848A5c; }
-
-/*/ LINK /*/
-
-a {
-    text-decoration: none;
-}
+::-moz-selection { background: #0C3A265c; }
+::selection { background: #0C3A265c; }
 
 /*/ PESQUISA /*/
 
@@ -31,33 +25,70 @@ a {
 	background: rgba(0, 66, 65, 0);
     padding: 1px;
     border: none;
-    width: 80%;
+    width: 93%;
     height: 100%;
-}
-
-/*/ BOX /*/
-#lineT {
-    width: 100%;
-    border-top: 3px solid #E4848AD1;
-    position: absolute;
-    top: 0%;
-}
-
-#lineB {
-    width: 100%;
-    border-bottom: 3px solid #E4848AD1;
-    position: absolute;
-    bottom: 0%;
 }
 
 #box {
     position: absolute;
-    border: 2px solid #E4848A6B;
+    border: 2px solid #0C3A26;
     margin-left: auto;
     margin-right: auto;
     right: 0;
     left: 0;
-    width: 75%;
-    height: 8%;
-    top: 42%;
+    width: 65%;
+    height: 7.7%;
+    top: 42.1%;
+}
+
+#txL {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 65%;
+    left: 0;
+    top: 38%;
+    font-size: 105px;
+    color: #0C3A26;
+}
+
+#txR {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 65%;
+    top: 38%;
+    font-size: 105px;
+    color: #0C3A26;
+}
+
+
+/*/ BOX /*/
+#lineT {
+    width: 100%;
+    border-top: 3px solid #048257D1;
+    position: absolute;
+    top: 0%;
+}
+
+#lineT2 {
+    width: 100%;
+    border-top: 3px solid #0C3A26D1;
+    position: absolute;
+    top: 0.8%;
+}
+
+#lineB {
+    width: 100%;
+    border-bottom: 3px solid #048257D1;
+    position: absolute;
+    bottom: 0%;
+}
+
+#lineB2 {
+    width: 100%;
+    border-bottom: 3px solid #0C3A26D1;
+    position: absolute;
+    bottom: 0.8%;
 }
