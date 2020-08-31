@@ -74,9 +74,9 @@ body, html {
 
 #lineT2 {
     width: 100%;
-    border-top: 3px solid #0C3A26D1;
+    border-top: 4px solid #0C3A26D1;
     position: absolute;
-    top: 0.8%;
+    top: 0.3%;
 }
 
 #lineB {
@@ -88,7 +88,7 @@ body, html {
 
 #lineB2 {
     width: 100%;
-    border-bottom: 3px solid #0C3A26D1;
+    border-bottom: 4px solid #0C3A26D1;
     position: absolute;
-    bottom: 0.8%;
+    bottom: 0.3%;
 }
