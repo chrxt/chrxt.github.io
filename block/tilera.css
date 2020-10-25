@@ -9,7 +9,7 @@ body, html {
 *{
     font-family: Ubuntu Mono;
     color: #048257A5 ;
-    font-size: 18px;
+    font-size: 50px;
     text-align: center;
     text-transform: none;
 }
@@ -40,29 +40,6 @@ body, html {
     height: 7.7%;
     top: 42.1%;
 }
-
-#txL {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    right: 65%;
-    left: 0;
-    top: 38%;
-    font-size: 105px;
-    color: #0C3A26;
-}
-
-#txR {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    right: 0;
-    left: 65%;
-    top: 38%;
-    font-size: 105px;
-    color: #0C3A26;
-}
-
 
 /*/ BOX /*/
 #lineT {
