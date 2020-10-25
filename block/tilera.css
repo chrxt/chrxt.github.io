@@ -20,15 +20,6 @@ body, html {
 ::selection { background: #0C3A265c; }
 
 /*/ PESQUISA /*/
-
-#input {
-	background: rgba(0, 66, 65, 0);
-    padding: 1px;
-    border: none;
-    width: 93%;
-    height: 100%;
-}
-
 #box {
     position: absolute;
     border: 0px solid #0C3A26;
@@ -36,7 +27,7 @@ body, html {
     margin-right: auto;
     right: 0;
     left: 0;
-    width: 65%;
+    width: 85%;
     height: 7.7%;
     top: 42.1%;
 }
