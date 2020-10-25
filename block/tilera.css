@@ -7,9 +7,9 @@ body, html {
 }
 
 *{
-    font-family: Ubuntu Mono;
+    font-family: Roboto Mono;
     color: #048257A5 ;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     text-transform: none;
 }
