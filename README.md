@@ -1,4 +1,4 @@
 # chrxt.github.io
 
-commands code from <a href="https://github.com/WillEccles/startpage">willeccles startpage</a> with some modifications.
+the commands code are from <a href="https://github.com/WillEccles/startpage">willeccles startpage</a> with some modifications.
 <br>
