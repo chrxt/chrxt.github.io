@@ -1,4 +1,4 @@
 # chrxt.github.io
 
-Java from <a href="https://github.com/WillEccles/startpage">WillEccles startpage</a> ((i really like his code))
+commands code from <a href="https://github.com/WillEccles/startpage">willEccles startpage</a> with some modifications.
 <br>
