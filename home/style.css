@@ -1,0 +1,121 @@
+/*/ BACKGROUND AND FONT /*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #1b1b1b;
+    overflow: hidden;
+}
+
+*{
+    font-family: Ubuntu Mono;
+    color: #ffffffd6;
+    font-size: 17px;
+    text-align: center;
+    text-transform: none;
+}
+
+/*/ TEXT SELECTION /*/
+::-moz-selection { background: #065B335c;}
+::selection { background: #065B335c;}
+
+/*/ INPUT /*/
+#input {
+	background: rgba(0, 66, 65, 0);
+    padding: 4px;
+    border: none;
+    border-bottom: 2px solid #065B33;
+    width: 20%;
+    height: 25px;
+    top: 45%;
+    left: 0;
+	right: 0;
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+/*/ IMG BOX /*/
+#boxy {
+    height: 100%;
+    width: 25%;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 5px solid #065B33;
+}
+
+.side1 {
+    flex: 0 0 30%;
+    max-width: 35%;
+    object-fit: cover;
+    left: -85%;
+}
+
+.content{
+display: flex;
+flex-wrap: wrap;
+margin-right: 0;
+margin-left: 0;
+}
+
+/*/ VERTICAL LINE /*/
+.vertical{
+            border-left: 5px solid #065B33;
+            height: 100%;
+            position:absolute;
+            right: 0%;
+        }
+
+/*/ CLOCK BOX /*/
+.time{
+    background: rgba(0, 66, 65, 0);
+    padding: 1px;
+    border: none;
+    width: 20%;
+    height: auto;
+    top: 15%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto Mono;
+    font-size: 40px;
+}
+
+/*/ MENU /*/
+.menu{
+    background: rgba(0, 66, 65, 0);
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 52%;
+}
+
+a:link{
+    margin: 5px;
+    font-family: Ubuntu Mono;
+    font-size: 16px;
+    text-decoration: none;
+    box-align: center;
+}
+
+a:hover{
+    color: #087D46;
+}
+
+/*/ REMOVE BORDER ON INPUT BOX/*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
