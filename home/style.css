@@ -16,15 +16,15 @@ body, html {
 }
 
 /*/ TEXT SELECTION /*/
-::-moz-selection { background: #065B335c;}
-::selection { background: #065B335c;}
+::-moz-selection { background: #0035805c;}
+::selection { background: #0035805c;}
 
 /*/ INPUT /*/
 #input {
 	background: rgba(0, 66, 65, 0);
     padding: 4px;
     border: none;
-    border-bottom: 2px solid #065B33;
+    border-bottom: 2px solid #003580;
     width: 20%;
     height: 25px;
     top: 45%;
@@ -43,7 +43,7 @@ body, html {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    border-right: 5px solid #065B33;
+    border-right: 5px solid #003580;
 }
 
 .side1 {
@@ -62,7 +62,7 @@ margin-left: 0;
 
 /*/ VERTICAL LINE /*/
 .vertical{
-            border-left: 5px solid #065B33;
+            border-left: 5px solid #003580;
             height: 100%;
             position:absolute;
             right: 0%;
@@ -109,7 +109,7 @@ a:link{
 }
 
 a:hover{
-    color: #087D46;
+    color: #003580;
 }
 
 /*/ REMOVE BORDER ON INPUT BOX/*/
